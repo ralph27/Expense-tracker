@@ -30,7 +30,7 @@ export const AddTransaction = () => {
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Enter text..."
+            placeholder="Enter transaction..."
           />
         </div>
         <div className="form-control">
@@ -39,7 +39,9 @@ export const AddTransaction = () => {
             (negative - expense, positive - income)
           </label>
           <input
+
             type="number"
+            step="0.1"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="Enter amount..."
